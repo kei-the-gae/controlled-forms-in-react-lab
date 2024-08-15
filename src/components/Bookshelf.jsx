@@ -9,6 +9,10 @@ const Bookshelf = () => {
         { title: '', author: '' },
     ]);
 
+    const handleInputChange = (e) => {
+        setNewBook({ ...newBook, [e.target.name]: e.target.value });
+    };
+
     return (
         <div className="bookshelfDiv">
             <div className="formDiv">
